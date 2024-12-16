@@ -1,0 +1,173 @@
+/* Resets */
+
+html,body, #root {
+    height: 100%;
+}
+
+/* Global */
+
+.row {
+    --bs-gutter-x: align-items;
+}
+
+div.loading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 100;
+  }
+
+/* Navbar */
+
+nav a.active,
+nav a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #DAB089 !important;
+    text-decoration: none !important
+}
+
+/* Landing Page */
+
+#landing {
+    background-image: url('./assets/images/landing.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* AuthForm */
+
+#authForm {
+    background-image: url('./assets/images/register_login.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Cuisines */
+
+#cuisines {
+    background-image: url('./assets/images/cuisines.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#cuisines h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#cuisines-form {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(249, 249, 249, 0.4);
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+#cuisines-form h4,
+#cuisines-form p {
+    margin: 10px 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container form {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+  }
+
+#search-again-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.form-search-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* User Cuisines */
+
+#userCuisineStyle {
+    background-image: url('./assets/images/user_cuisines.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Add Recipe */
+
+#recipeForm {
+    background-image: url('./assets/images/recipe_form.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.formStyle {
+    padding: 45px 0;
+}
+
+/* Contact */
+
+#contactStyle {
+    background-image: url('./assets/images/contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Footer */
+
+footer {
+    background-color: #DAB089;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Page Not Found */
+
+#notFound {
+    background-image: url('./assets/images/not_found.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 750px) {
+    #authForm {
+        background-size: cover;
+    }
+}
