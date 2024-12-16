@@ -17,7 +17,7 @@
     "install:all": "npm i && concurrently \"npm run client:install\" \"npm run server:install\"",
     "save": "git add -A && git commit -m \"ready for deploy\"",
     "push": "git push origin HEAD:main",
-    "deploy": "npm run client:build && npm run server:build && npm run save && npm run push"
+    "deploy": "npm run install:all && npm run client:build && npm run server:build && npm run save && npm run push"
   },
   "keywords": [],
   "author": "",
