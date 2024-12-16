@@ -2,7 +2,7 @@
   "name": "recipe_master",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/dist/server.js",
   "scripts": {
     "client:install": "cd ./client && npm i",
     "client:dev": "cd ./client && npm run dev",
@@ -14,7 +14,7 @@
     "seed": "cd ./server && npm run seed",
     "start": "node ./server/dist/server.js",
     "install": "cd ./server && npm i",
-    "install:all": "npm i && concurrently \"npm run client:install\" \"npm run server:install\"",
+    "install:all": "npm run client:install && npm run server:install",
     "save": "git add -A && git commit -m \"ready for deploy\"",
     "push": "git push origin HEAD:main",
     "deploy": "npm run install:all && npm run client:build && npm run server:build && npm run save && npm run push"
@@ -24,13 +24,6 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "concurrently": "^9.0.1",
-    "wait-on": "^8.0.1"
-  },
-  "dependencies": {
-    "all": "^0.0.0",
-    "axios": "^1.7.7",
-    "nodemon": "^3.1.7",
-    "vite": "^5.4.10"
+    "concurrently": "^9.0.1"
   }
 }
