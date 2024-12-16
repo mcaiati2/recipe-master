@@ -2,7 +2,7 @@
   "name": "recipe_master",
   "version": "1.0.0",
   "description": "",
-  "main": "./server/dist/server.js",
+  "main": "index.js",
   "scripts": {
     "client:install": "cd ./client && npm i",
     "client:dev": "cd ./client && npm run dev",
